@@ -61,7 +61,8 @@ function greetingFunc(){
     }
     document.getElementById("greeting").innerHTML = greeting + ", I am Gryphon."
 }
-if (window.location.href.includes("index.html")){
+console.log(window.location.pathname)
+if (window.location.pathname.includes("index.html") || window.location.pathname == "/"){
     greetingFunc()   
 }
 
