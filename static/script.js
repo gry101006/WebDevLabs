@@ -37,7 +37,7 @@ L2 = ["Apple", "Banana", "Kiwi", "Orange"]
 findTheBanana(L1)
 findTheBanana(L2) */
 
-function findTheBanana(item, index, arr){
+/* function findTheBanana(item, index, arr){
     if (item == "Banana"){
             window.alert(`found the Banana in ` + index);
         }
@@ -45,7 +45,7 @@ function findTheBanana(item, index, arr){
 
 
 L1.forEach(findTheBanana)
-L2.forEach(findTheBanana)
+L2.forEach(findTheBanana) */
 
 function greetingFunc(){
     d = new Date();
@@ -66,4 +66,41 @@ if (window.location.pathname.includes("index.html") || window.location.pathname 
     greetingFunc()   
 }
 
+function addYear(){
+    d = new Date();
+    y = d.getFullYear();
+    document.getElementById("copyYear").innerText = `Copyright ${y}, Gryphon Chong`
+}
+
+function showList(){
+    document.getElementById('funList').style.display = "block" 
+}
+
+
+$(document).ready(function(){
+    $('#introReadMore').click(function(){
+        $("#longBio").show();
+        $("#shortBio").hide();
+        $("#introReadLess").show();
+        $("#introReadMore").hide();
+    });
+    $('#introReadLess').click(function(){
+        $("#shortBio").show();
+        $("#longBio").hide();
+        $("#introReadMore").show();
+        $("#introReadLess").hide();
+    });
+});
+
+function checkForm(){
+    var username = document.getElementById("name")
+    var userEmail = document.getElementById("email")
+    var userText = document.getElementById("comment")
+
+    if ((username.validity.valueMissing || userEmail.validity.valueMissing || userText.validity.valueMissing)){
+        document.getElementById("alert").innerHTML = "Please fill out all fields."
+    }
+
+    
+}
 

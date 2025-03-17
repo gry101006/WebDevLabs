@@ -14,7 +14,7 @@
     <title>Gryphon Chong</title>
 </head>
 
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Gryphon Chong</h1>
         <nav class="menu">
@@ -26,12 +26,13 @@
     </header>
     <div class="main">
         <h2>Things I love to do for fun!</h2>
-        <ul>
+        <button onclick="showList()">Click to see...</button>
+        <ul id="funList" >
             <li>Photography</li>
             <li>Reading</li>
             <li>Board Games</li>
         </ul>
     </div>
-    <p>Copyright 2025, Gryphon Chong</p>
+    <footer id="copyYear">Copyright , Gryphon Chong</footer>
 </body>
 </html>

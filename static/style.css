@@ -72,3 +72,15 @@ form * {
     border-radius: 4px;
     color: white;
 }
+
+#funList{
+    display: None
+}
+
+#longBio{
+    display: None
+}
+
+#introReadLess{
+    display: None
+}
