@@ -73,9 +73,9 @@ form * {
     color: white;
 }
 
-#funList{
+/* #funList{
     display: None
-}
+} */
 
 #longBio{
     display: None
@@ -83,4 +83,47 @@ form * {
 
 #introReadLess{
     display: None
+}
+.funIMG{
+    border-radius: 100%;
+    width: auto;
+    height: 30vh;
+}
+#item3{
+    iframe{
+        width:50[x];
+    }
+}
+#item2{
+    width:400px;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    border-radius: 100%; display: inline-block;border-radius: 10%;
+    box-shadow: 5px 5px #888888;
+}
+
+.mainLayout{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#top{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#bottom{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#item1{
+    width:400px;
 }

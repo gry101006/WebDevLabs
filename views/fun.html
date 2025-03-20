@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="../static/script.js" defer></script>
+    
     <link rel="stylesheet" href="../static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gryphon Chong">
@@ -24,14 +25,36 @@
             <a class="menu" href="fun.html">For fun</a>
         </nav>
     </header>
-    <div class="main">
-        <h2>Things I love to do for fun!</h2>
-        <button onclick="showList()">Click to see...</button>
-        <ul id="funList" >
-            <li>Photography</li>
-            <li>Reading</li>
-            <li>Board Games</li>
-        </ul>
+    <div class="mainLayout">
+        <div id="top">
+        <div id="item1">
+            <h2>Things I love to do for fun!</h2>
+<!--             <button onclick="showList()">Click to see...</button>
+ -->            <ul id="funList" >
+                <li>Photography</li>
+                <li>Reading</li>
+                <li>Board Games</li>
+            </ul>
+        </div>
+   
+        
+        <div id="item2">
+            <img class="funIMG" src="../static/bigben.jpg">
+        </div>
+    </div>
+    <div id="bottom">
+        <div id="item3">
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/jF2ZeoYq4Fs" title="Ghost Garden" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div id="item4">
+            <div class="container">
+                <h2>Need some advice?</h2>
+                <p id="adviceText">Click the button to get a random piece of advice!</p>
+                <button onclick="getAdvice()">Get Advice</button>
+            </div>
+        </div>
+    </div>
     </div>
     <footer id="copyYear">Copyright , Gryphon Chong</footer>
 </body>
