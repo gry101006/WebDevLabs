@@ -115,6 +115,9 @@ function highlightActive(){
         if (String(window.location).includes(currentElem.getAttribute("href")) ){
             currentElem.style.color = "white";
             currentElem.style.animation = "colorShifting 1s linear infinite alternate";
+        } else if (String(windows.location.pathname) == "/WebDevLabs/" && currentElem.getAttribute("href").includes("index.html")) {
+            currentElem.style.color = "white";
+            currentElem.style.animation = "colorShifting 1s linear infinite alternate";
         }
     }
 }
