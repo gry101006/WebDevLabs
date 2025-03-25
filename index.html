@@ -4,6 +4,8 @@
     <script src="./static/script.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +18,7 @@
     <title>Gryphon Chong</title>
 </head>
 
-<body onload="addYear()">
+<body onload="addYear(); highlightActive()">
     <header>
         <h1 id="webname">Gryphon Chong</h1>
         <nav class="menu">
@@ -33,6 +35,8 @@
         <p id="longBio">Introduction Paragraph would go here! Wonder what this would be? <br> Wow! You're reading more! Isn't this amazing.</p>
         <button id="introReadMore">Read more</button>
         <button id="introReadLess">Read less</button>
+        <a href="template.html">Responsive Colorful Version of this Page</a>
+
     </div>
     <footer id="copyYear">Copyright , Gryphon Chong</footer>
 </body>

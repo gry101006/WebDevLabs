@@ -1,3 +1,66 @@
+
+.container{
+    background-color: lightgray;
+    display:grid;
+    grid-template-areas: 
+        'header header'
+        'nav nav'
+        'imgbox content'
+        'footer footer';
+}  
+.mainImg{
+    grid-area: imgbox;
+    background-color: aquamarine;
+} 
+
+.mainContent{
+    grid-area: content;
+    background-color: lightcoral;
+}
+
+
+header{
+    grid-area:header;
+    background-color: lightskyblue;
+}
+nav{
+    grid-area:nav;
+    background-color: blanchedalmond;
+}
+footer{
+    grid-area:footer;
+    background-color: floralwhite;
+}
+
+#hamburgerMenu{
+    display:none;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+    grid-template-areas: 
+        'header'
+        'nav'
+        'imgbox'
+        'content'
+        'footer';
+    grid-template-columns: 95vw;
+    }
+
+    #hamburgerMenu{
+        display:inherit;
+    }
+    a.menu{
+        display:none;
+        margin:0;
+    }
+    
+    
+}
+
+
+
+
 *{
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -88,12 +151,6 @@ form * {
 a.menu:hover{
     color: #000;
     background-color: lightskyblue;
+
+    font-weight: 600;
 }
-
-@keyframes colorShifting {
-    0%   {background-color: rgb(255, 0, 204);}
-    25%  {background-color: rgb(191, 0, 255);}
-    50%  {background-color: rgb(100, 100, 255);}
-    100% {background-color: rgb(255, 123, 134);}
-  }
-

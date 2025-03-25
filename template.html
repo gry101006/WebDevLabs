@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="templates.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="./static/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>Template</title>
+</head>    
+
+
+<body onload="addYear(); highlightActive()">
+    <div class="container">
+    <header><h1 id="webname">Gryphon Chong</h1></header>
+    <nav class="menu">
+        <a class="menu" href="index.html">Home</a>
+        <a class="menu" href="./views/cv.html">CV</a>
+        <a class="menu" href="./views/contact.html">Contact me</a>
+        <a class="menu" href="./views/fun.html">For fun</a>
+        <i id="hamburgerMenu" class="fas fa-bars"></i>
+    </nav>
+    <div class="mainImg"><img src="./static/me.jpg" style="width: 10rem;" alt="a picture of me"></div>
+    <div class="mainContent">
+        <p id="shortBio">Introduction Paragraph would go here! Wonder what this would be?</p>
+        <p id="longBio">Introduction Paragraph would go here! Wonder what this would be? <br> Wow! You're reading more! Isn't this amazing.</p>
+        <button id="introReadMore">Read more</button>
+        <button id="introReadLess">Read less</button>
+    </div>
+    <footer id="copyYear">Copyright , Gryphon Chong</footer>
+
+    </div>
+</body>
+</html>
